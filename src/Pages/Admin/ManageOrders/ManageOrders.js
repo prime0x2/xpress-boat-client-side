@@ -70,8 +70,6 @@ const ManageOrders = () => {
                                 <div className="manage-section d-flex justify-content-between flex-column flex-lg-row mt-2 mt-lg-4">
                                     <button onClick={() => handleApprove(order._id, index)} className="btn btn-approve me-lg-5 px-lg-3" disabled={order.status !== 'Pending'}><i className="fas fa-check"></i> &nbsp;{order.status !== 'Pending' ? 'Boat Shipped' : 'Approve Booking'}</button>
 
-                                    {/* <button className="btn btn-update me-lg-5"><i className="far fa-edit"></i> &nbsp;Update Booking</button> */}
-
                                     <button onClick={() => handleDelete(order._id)} className="btn btn-delete px-lg-3"><i className="far fa-trash-alt"></i> &nbsp;Delete Order</button>
                                 </div>
                             </div>
