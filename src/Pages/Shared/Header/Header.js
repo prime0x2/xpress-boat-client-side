@@ -61,13 +61,16 @@ const Header = () => {
                                         ("selected")
                                 } className="nav-link px-4 text-light">Inventory</NavLink>
                             </li>
-                            <li className="nav-item">
-                                <NavLink to="/dashboard" activeClassName={
-                                    location.pathname === "/" ?
-                                        (navbar ? "selected" : " ") :
-                                        ("selected")
-                                } className="nav-link px-4 text-light">Dashboard</NavLink>
-                            </li>
+                            {
+                                user &&
+                                <li className="nav-item">
+                                    <NavLink to="/dashboard" activeClassName={
+                                        location.pathname === "/" ?
+                                            (navbar ? "selected" : " ") :
+                                            ("selected")
+                                    } className="nav-link px-4 text-light">Dashboard</NavLink>
+                                </li>
+                            }
                             {
                                 !user &&
                                 <li className="nav-item">
@@ -87,62 +90,6 @@ const Header = () => {
                                         <i className="fas fa-circle"></i> &nbsp;{user.displayName}
                                     </button>
                                     <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                                        {
-                                            admin ?
-                                            <>
-                                                <li className="dropdown-item">
-                                                    <NavLink to="/manageOrders" activeClassName={
-                                                        location.pathname === "/" ?
-                                                            (navbar ? "selected" : " ") :
-                                                            ("selected")
-                                                    } className="nav-link p-0 text-light">Manage Orders</NavLink>
-                                                </li>
-                                                <li className="dropdown-item">
-                                                    <NavLink to="/updateProduct" activeClassName={
-                                                        location.pathname === "/" ?
-                                                            (navbar ? "selected" : " ") :
-                                                            ("selected")
-                                                    } className="nav-link p-0 text-light">Update Product</NavLink>
-                                                </li>
-                                                <li className="dropdown-item">
-                                                    <NavLink to="/addProduct" activeClassName={
-                                                        location.pathname === "/" ?
-                                                            (navbar ? "selected" : " ") :
-                                                            ("selected")
-                                                    } className="nav-link p-0 text-light">Add Product</NavLink>
-                                                </li>
-                                                <li className="dropdown-item">
-                                                    <NavLink to="/addAdmin" activeClassName={
-                                                        location.pathname === "/" ?
-                                                            (navbar ? "selected" : " ") :
-                                                            ("selected")
-                                                    } className="nav-link p-0 text-light">Add Admin</NavLink>
-                                                </li>
-                                            </> :
-                                            <>
-                                                <li className="dropdown-item">
-                                                    <NavLink to="/myOrders" activeClassName={
-                                                        location.pathname === "/" ?
-                                                            (navbar ? "selected" : " ") :
-                                                            ("selected")
-                                                    } className="nav-link p-0 text-light">My Orders</NavLink>
-                                                </li>
-                                                <li className="dropdown-item">
-                                                    <NavLink to="/myReviews" activeClassName={
-                                                        location.pathname === "/" ?
-                                                            (navbar ? "selected" : " ") :
-                                                            ("selected")
-                                                    } className="nav-link p-0 text-light">My Reviews</NavLink>
-                                                </li>
-                                                <li className="dropdown-item">
-                                                    <NavLink to="/payment" activeClassName={
-                                                        location.pathname === "/" ?
-                                                            (navbar ? "selected" : " ") :
-                                                            ("selected")
-                                                    } className="nav-link p-0 text-light">Payment</NavLink>
-                                                </li>
-                                            </>
-                                        }
                                         <li className="dropdown-item">
                                             <button className="btn-logout rounded p-0" onClick={logOut}>Logout&nbsp; <i className="fas fa-sign-out-alt"></i></button>
                                         </li>

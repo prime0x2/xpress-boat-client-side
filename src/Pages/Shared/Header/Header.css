@@ -17,6 +17,10 @@
     width: 50px;
 }
 
+.dropdown-menu {
+    min-width: auto;
+}
+
 .navbar-brand h4 {
     color: rgb(255, 183, 27);
 }
