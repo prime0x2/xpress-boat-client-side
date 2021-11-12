@@ -1,0 +1,145 @@
+.booked-agent {
+    width: 75%;
+    margin: auto;
+    padding: 30px 40px;
+    border: 1px solid rgb(81, 81, 81);
+    border-radius: 5px;
+}
+
+.booked-agent img {
+    width: 150px;
+    height: 150px;
+}
+
+.booked-agent a {
+    text-decoration: none;
+}
+.booked-agent a:hover {
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+}
+
+.booked-agent-contact i {
+    color: #6BC0E2;
+}
+.order-details {
+    width: 75%;
+    margin: auto;
+    padding: 30px 40px;
+    border: 1px solid rgb(81, 81, 81);
+    border-radius: 5px;
+}
+
+.order-details img {
+    width: 100%;
+}
+
+.order-details a {
+    text-decoration: none;
+}
+.order-details a:hover {
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+}
+
+.text-detail {
+    color: rgb(179, 179, 179);
+}
+
+.order-detail-contact i {
+    color: #6BC0E2;
+}
+
+.title-detail {
+    color: rgb(230, 150, 47);
+}
+
+
+.booking-form {
+    margin-top: 30px;
+}
+
+.booking-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-form form input, input:focus {
+    color: grey;
+    background: transparent;
+    width: 350px;
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.booking-form form input:focus {
+    color: #fff;
+    border: 1px solid grey;
+    outline: 0;
+}
+
+.booking-form form input[type=submit] {
+    width: auto;
+    color: #fff;
+    padding: 5px 15px;
+    background-color: rgb(230, 150, 47);
+    border-radius: 5px;
+}
+
+.booking-form form input[type=submit]:hover {
+    background-color: rgb(214, 128, 16);
+    text-shadow: 0px 0px 5px rgb(230, 150, 47);
+}
+
+.btn-delete {
+    color: white;
+    background-color: rgb(211, 15, 25);
+}
+
+.btn-delete:hover {
+    color: rgb(255, 48, 48);
+    background: transparent;
+    border: 1px solid rgb(255, 48, 48);
+}
+
+.pending {
+    color: rgb(255, 174, 0);
+    font-weight: 500;
+}
+
+.approved {
+    color: rgb(0, 255, 102);
+    font-weight: 500;
+}
+
+.btn-approve {
+    color: white;
+    background-color: rgb(10, 169, 68);
+}
+.btn-approve:hover {
+    color: rgb(26, 250, 108);
+    background: transparent;
+    border: 1px solid rgb(23, 236, 101);
+}
+
+
+
+@media only screen and (max-width:688px) {
+    .order-details {
+        width: 90%;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width:688px) {
+    .booked-agent {
+        width: 90%;
+    }
+}

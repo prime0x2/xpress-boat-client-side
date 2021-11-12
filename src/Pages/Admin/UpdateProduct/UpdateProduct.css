@@ -1,0 +1,15 @@
+.update-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://i.ibb.co/pXcBWF1/account-bg.jpg') no-repeat center fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.update-product-box {
+    /* background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 7px; */
+}

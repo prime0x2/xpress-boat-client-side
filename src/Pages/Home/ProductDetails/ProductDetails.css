@@ -1,0 +1,80 @@
+.product-details {
+    margin: auto;
+    padding: 30px 0px;
+    border-radius: 5px;
+}
+
+.product-details img {
+    width: 100%;
+}
+
+.product-details a {
+    text-decoration: none;
+}
+.product-details a:hover {
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+}
+
+.text-detail {
+    color: rgb(179, 179, 179);
+}
+
+.product-detail-contact i {
+    color: #6BC0E2;
+}
+
+.title-detail {
+    color: rgb(230, 150, 47);
+}
+
+
+.booking-form {
+    margin-top: 30px;
+}
+
+.booking-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-form form input, input:focus {
+    color: grey;
+    background: transparent;
+    width: 350px;
+    margin: 10px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.booking-form form input:focus {
+    color: #fff;
+    border: 1px solid grey;
+    outline: 0;
+}
+
+.booking-form form input[type=submit] {
+    width: auto;
+    color: #fff;
+    padding: 5px 15px;
+    background-color: rgb(230, 150, 47);
+    border-radius: 5px;
+}
+
+.booking-form form input[type=submit]:hover {
+    background-color: rgb(214, 128, 16);
+    text-shadow: 0px 0px 5px rgb(230, 150, 47);
+}
+
+
+
+
+
+@media only screen and (max-width:688px) {
+    .product-details {
+        width: 100%;
+    }
+}

@@ -1,0 +1,32 @@
+.add-admin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://i.ibb.co/pXcBWF1/account-bg.jpg') no-repeat center fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.add-admin-box {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+}
+
+.add-admin-box input {
+    color: rgb(144, 144, 144);
+}
+
+.add-admin-box input:focus {
+    color: rgb(255, 255, 255);
+}
+
+.add-admin-box input, .add-admin-box input:focus {
+    text-align: center;
+    width: 350px;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid rgb(0, 177, 226);
+}
