@@ -27,6 +27,7 @@ import UpdateProduct from '../Admin/UpdateProduct/UpdateProduct';
 import MyOrders from '../User/MyOrders/MyOrders';
 import Payment from '../User/Payment/Payment';
 import ManageOrders from '../Admin/ManageOrders/ManageOrders';
+import AddReview from '../User/AddReview/AddReview';
 
 const drawerWidth = 200;
 
@@ -235,29 +236,11 @@ export default function Dashboard() {
                                 <Route exact path={`${path}/payment`}>
                                     <Payment />
                                 </Route>
+                                <Route exact path={`${path}/review`}>
+                                    <AddReview />
+                                </Route>
                             </>
                         }
-                        {/* <Route exact path={path}>
-                            <MyOrders></MyOrders>
-                        </Route>
-                        <Route path={`${path}/review`}>
-                            <Review />
-                        </Route>
-                        <Route path={`${path}/pay`}>
-                            <Pay></Pay>
-                        </Route>
-                        <Route path={`${path}/makeAdmin`}>
-                            <MakeAdmin></MakeAdmin>
-                        </Route>
-                        <Route path={`${path}/manageAllOrders`}>
-                            <ManageAllOrders></ManageAllOrders>
-                        </Route>
-                        <Route path={`${path}/addProducts`}>
-                            <AddProduct></AddProduct>
-                        </Route>
-                        <Route path={`${path}/updateProducts`}>
-                            <UpdateProduct></UpdateProduct>
-                        </Route> */}
                     </Switch>
                 </Box>
 

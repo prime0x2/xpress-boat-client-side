@@ -11,8 +11,7 @@ const Footer = () => {
                     <div className="d-flex align-items-center justify-content-center">
                         <a className="navbar-brand text-light" href="/"><img src={logo} alt="" /></a>
                         <a href="/" className="navbar-brand text-light text-start">
-                            <h4 className="m-0 fw-bold">Maldives</h4>
-                            <h6 className="m-0 fw-bold">Tour & Travel</h6>
+                            <h4 className="m-0 fw-bold">X-Press Boat</h4>
                         </a>
                     </div>
                 </div>
@@ -40,7 +39,7 @@ const Footer = () => {
                             <i className="fas fas2 fa-envelope"></i>
                         </div>
                         <div>
-                            <p className="py-0 m-0">support@mvtour.com</p>
+                            <p className="py-0 m-0">support@xpressboat.com</p>
                         </div>
                     </div>
                 </div>
@@ -49,7 +48,7 @@ const Footer = () => {
                 <div className="col footer-end pt-5 py-lg-0 px-auto px-lg-5">
                     <div className="text-center text-lg-start">
                         <h6 className="fw-bold">About US</h6>
-                        <p className="py-2">Maldives Tour & Travel. We help you experience the best from Maldives.</p>
+                        <p className="py-2">X-Press Boat. We help you get the best boat in your budget.</p>
                         <div>
                             <i className="footer-icons fab fab2 fa-facebook-square"></i>
                             <i className="footer-icons fab fab2 fa-instagram"></i>

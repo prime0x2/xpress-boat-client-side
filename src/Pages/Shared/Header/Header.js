@@ -7,7 +7,7 @@ import './Header.css';
 
 const Header = () => {
 
-    const { admin, user, logOut } = useAuth();
+    const { user, logOut } = useAuth();
 
     const [navbar, setNavbar] = useState(false);
     const location = useLocation();
