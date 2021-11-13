@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import ProductCard from '../../Shared/ProductCard/ProductCard';
 import './UpdateProduct.css';
 
@@ -29,6 +28,22 @@ const UpdateProduct = () => {
             </div>
         );
     }
+    
+    const handleDelete = (id) => {
+        const warning = window.confirm('Are you sure\nYou want to delete this Product..!?');
+
+        if (warning) {
+            const url = `https://dry-dusk-43936.herokuapp.com/products/${id}`;
+            fetch(url, { method: 'DELETE' })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.deletedCount > 0) {
+                        const remaining = products.filter(product => product._id !== id);
+                        setProducts(remaining);
+                    }
+                });
+        }
+    }
 
     return (
         <div className="page dashboard-page update-product">
@@ -40,9 +55,7 @@ const UpdateProduct = () => {
                     {
                         products.map(product => (
                             <ProductCard key={product._id} product={product} >
-                                <Link to={`/update/${product._id}`}>
-                                    <button className="btn btn-book">Update &nbsp;<i className="far fa-edit"></i></button>
-                                </Link>
+                                <button onClick={() => handleDelete(product._id)} className="btn btn-delete px-lg-3"><i className="far fa-trash-alt"></i> &nbsp;Remove Product</button>
                             </ProductCard>
                         ))
                     }

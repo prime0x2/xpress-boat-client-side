@@ -5,6 +5,7 @@ import Account from './Pages/Account/Account';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import Home from './Pages/Home/Home/Home';
 import ProductDetails from './Pages/Home/ProductDetails/ProductDetails';
+import Inventory from './Pages/Inventory/Inventory';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
@@ -23,6 +24,10 @@ function App() {
 
                     <Route path="/home" >
                         <Home />
+                    </Route>
+                    
+                    <Route path="/inventory" >
+                        <Inventory />
                     </Route>
 
                     <Route path="/account" >
