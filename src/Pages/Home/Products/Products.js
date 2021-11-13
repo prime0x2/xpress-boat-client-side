@@ -31,7 +31,7 @@ const Products = () => {
 
 
     return (
-        <div className="container home-products text-center mx-3 p-lg-5 mx-lg-auto">
+        <div className="container home-products text-center p-3 p-lg-5 mx-lg-auto">
 
             {
                 location.pathname === '/' ? 
