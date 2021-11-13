@@ -153,7 +153,7 @@ export default function Dashboard() {
                     <Divider />
                     <List>
                         <Link style={{ textDecoration: 'none', color: 'black', fontWeight: 'bold' }} to={`${url}/updateProduct`} >
-                            <Button color="inherit">Update Product</Button>
+                            <Button color="inherit">Manage Product</Button>
                         </Link> <br />
                     </List>
                     <Divider />
