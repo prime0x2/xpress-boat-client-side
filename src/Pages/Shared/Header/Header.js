@@ -24,6 +24,12 @@ const Header = () => {
     if (location.pathname === "/") {
         window.addEventListener('scroll', changeNavbarBG);
     }
+    
+    if (location.pathname.includes('/dashboard')) {
+        return (
+            ''
+        )
+    }
 
     return (
         <header>
